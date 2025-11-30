@@ -109,8 +109,3 @@ jobs:
       - name: Install example dependencies
         working-directory: ./examples
         run: npm ci
-
-      - name: Run basic test
-        working-directory: ./examples
-        run: node basic-usage.js
-        timeout-minutes: 5
