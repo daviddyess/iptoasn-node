@@ -1,0 +1,13 @@
+{
+  "name": "iptoasn-node-examples",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Examples for iptoasn-node",
+  "scripts": {
+    "basic": "node basic-usage.js",
+    "server": "node express-server.js"
+  },
+  "dependencies": {
+    "express": "^5.1.0"
+  }
+}

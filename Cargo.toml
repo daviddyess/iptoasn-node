@@ -1,0 +1,39 @@
+[workspace]
+resolver = "2"
+members = [
+    "iptoasn-core",
+    "iptoasn-node",
+]
+
+[workspace.package]
+version = "0.1.0"
+edition = "2021"
+license = "MIT"
+authors = ["David Dyess II"]
+
+[workspace.dependencies]
+# Async runtime
+tokio = { version = "1", features = ["full"] }
+
+# HTTP client
+reqwest = { version = "0.12", features = ["gzip"] }
+
+# Serialization
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+
+# Error handling
+thiserror = "2"
+anyhow = "1"
+
+# Logging
+tracing = "0.1"
+
+# Compression
+flate2 = "1"
+
+# Time handling
+time = { version = "0.3", features = ["formatting", "macros"] }
+
+# Our core library
+iptoasn-core = { path = "iptoasn-core" }

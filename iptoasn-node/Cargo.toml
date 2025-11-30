@@ -1,0 +1,22 @@
+[package]
+name = "iptoasn-node"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+authors.workspace = true
+
+[lib]
+crate-type = ["cdylib"]
+
+[dependencies]
+iptoasn-core = { workspace = true }
+tokio = { workspace = true }
+tracing = { workspace = true }
+tracing-subscriber = { version = "0.3", features = ["env-filter"] }
+
+# NAPI-RS
+napi = { version = "3", features = ["async", "tokio_rt"] }
+napi-derive = "3"
+
+[build-dependencies]
+napi-build = "2"
