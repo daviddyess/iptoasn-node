@@ -26,7 +26,6 @@
     "artifacts": "napi artifacts",
     "build": "napi build --platform --release",
     "build:debug": "napi build --platform",
-    "prepublishOnly": "napi prepublish -t npm",
     "test": "node ../examples/basic-usage.js",
     "version": "napi version"
   },
@@ -63,5 +62,11 @@
   "homepage": "https://github.com/daviddyess/iptoasn-node#readme",
   "publishConfig": {
     "access": "public"
+  },
+  "optionalDependencies": {
+    "iptoasn-node-linux-x64-gnu": "0.9.0",
+    "iptoasn-node-darwin-x64": "0.9.0",
+    "iptoasn-node-darwin-arm64": "0.9.0",
+    "iptoasn-node-win32-x64-msvc": "0.9.0"
   }
 }
